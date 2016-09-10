@@ -1,14 +1,637 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Kukajikato </title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<script src="js/script.js"></script>
-	<script src="js/jquery-3.1.0.min.js"></script>
+<html lang="en">
+    <head>
+        <title>Kato Photography</title>
+        <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="http://kukajikato.github.io" />
+        <meta name="description" content="Kukajikato Photography Portfolio" />
+        <meta name="keywords" content="photography, photo, pictures, picture, images, image, portfolio"/>
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/linkstyles.css" />
+        <link rel="stylesheet" type="text/css" href="css/imagegridstyles.css" />
+        <link rel="stylesheet" type="text/css" href="css/unslider.css">
+        <script src="js/modernizr.custom.js"></script>
+    </head>
+    <body>
+    <div id="wrapper">
+        <header>
+            <div id="dl-menu" class="dl-menuwrapper">
+                <button class="dl-trigger">Open Menu</button>
+                <ul class="dl-menu">
+                    <li>
+                        <a href="#top-banner">Home</a>
+                    </li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul><!-- dl-menu -->
+            </div><!-- /dl-menuwrapper -->
+            
+            <div id="top-banner" class="top-banner"></div>
+            
+            <div id="banner-filter">
+                <div class="container">
+                    <div class="spacer"></div>
+                    <span id="brand-h1" class="link link--takiri ">
+                        Kato<span>Shoot like <br> a Boss</span>
+                    </span><!-- brand -->
+                 
+                    <div class="arrow-down">
+                        <a href="#about"><i class="fa fa-chevron-down fa-2x"></i></a>
+                    </div><!-- arrow-down -->
+                </div>
+            </div><!-- /banner-filer -->
+        </header><!-- /header -->
+        
+        <section id="about" class="">
+            <div id="cbp-fbscroller" class="cbp-fbscroller">
+				
+				<div id="about-us" class="">
+                        <div id="cbp-so-scroller" class="cbp-so-scroller">
+                            <section class="cbp-so-section">
+                                <article class="cbp-so-side cbp-so-side-left">
+                                    <h2>Kato Photography</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </article>
+                                <figure class="cbp-so-side cbp-so-side-right">
+                                    <img src="images/about/1.jpg">
+                                </figure>
+                            </section>
+                            
+                            <section class="cbp-so-section">
+                                <figure class="cbp-so-side cbp-so-side-left">
+                                    <img src="images/about/2.jpg">
+                                </figure>
+                                <article class="cbp-so-side cbp-so-side-right">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </article>
+                            </section>
+                        </div>
+                    </div><!-- about-us -->
+				<section id="fbsection2">
+				    <div id="about-owner" class="">
+                       
+                        <section class="cbp-so-section">
+                                <article class="cbp-so-side cbp-so-side-left">
+                                    <h2>Eagan Charles E. Martin</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </article>
+                        </section>
+                    </div><!-- about owner -->
+				</section>
+            </div>
+        </section><!-- about -->
+        
+        <section id="menu" class="">
+            <div id="featured" class="">
+                <span class="featured-label">Featured <span>works</span></span>
+                <div class="featured-slider">
+                    <ul>
+                        <li>
+                            <div class="gridd">
+                                <figure class="effect-goliath">
+                                    <img src="images/featured/1.jpg"/>
+                                    <figcaption>
+                                        <h2>Calm<span>Nature</span></h2>
+                                        <p>Sierra Madre, Philippines</p>
+                                    </figcaption>			
+                                </figure>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gridd">
+                                <figure class="effect-goliath">
+                                    <img src="images/featured/2.jpg"/>
+                                    <figcaption>
+                                        <h2>Cold<span>as Ice</span></h2>
+                                        <p>Regina Rica, Philippines</p>
+                                    </figcaption>           
+                                </figure>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gridd">
+                                <figure class="effect-goliath">
+                                    <img src="images/featured/3.jpg"/>
+                                    <figcaption>
+                                        <h2>Peek<span>On the Saint</span></h2>
+                                        <p>Regina Rica, Philippines</p>
+                                    </figcaption>           
+                                </figure>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gridd">
+                                <figure class="effect-goliath">
+                                    <img src="images/featured/4.jpg"/>
+                                    <figcaption>
+                                        <h2>No<span>Trespassing</span></h2>
+                                        <p>Pililla Windmills, Philippines</p>
+                                    </figcaption>           
+                                </figure>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gridd">
+                                <figure class="effect-goliath">
+                                    <img src="images/featured/5.jpg"/>
+                                    <figcaption>
+                                        <h2>In the<span>Middle</span></h2>
+                                        <p>Sierra Madre, Philippines</p>
+                                    </figcaption>           
+                                </figure>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gridd">
+                                <figure class="effect-goliath">
+                                    <img src="images/featured/6.jpg"/>
+                                    <figcaption>
+                                        <h2>Never<span>Alone</span></h2>
+                                        <p>Regina Rica, Philippines</p>
+                                    </figcaption>           
+                                </figure>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- featured -->
+            <div class="container">
+                <div id="gallery" class="">
+                    <span>
+                        Kato's <span>gallery</span>
+                    </span>
+                    <div class="content">
+                        <div class="grid">
+                            
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/1.jpg" class="img-wrap"><img src="images/gallery/1.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/2.jpg" class="img-wrap"><img src="images/gallery/2.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/3.jpg" class="img-wrap"><img src="images/gallery/3.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/4.jpg" class="img-wrap"><img src="images/gallery/4.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/5.jpg" class="img-wrap"><img src="images/gallery/5.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/6.jpg" class="img-wrap"><img src="images/gallery/6.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/7.jpg" class="img-wrap"><img src="images/gallery/7.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/8.jpg" class="img-wrap"><img src="images/gallery/8.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/9.jpg" class="img-wrap"><img src="images/gallery/9.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/10.jpg" class="img-wrap"><img src="images/gallery/10.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/11.jpg" class="img-wrap"><img src="images/gallery/11.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/12.jpg" class="img-wrap"><img src="images/gallery/12.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/13.jpg" class="img-wrap"><img src="images/gallery/13.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/14.jpg" class="img-wrap"><img src="images/gallery/14.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/15.jpg" class="img-wrap"><img src="images/gallery/15.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/16.jpg" class="img-wrap"><img src="images/gallery/16.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/17.jpg" class="img-wrap"><img src="images/gallery/17.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/18.jpg" class="img-wrap"><img src="images/gallery/18.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/19.jpg" class="img-wrap"><img src="images/gallery/19.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/20.jpg" class="img-wrap"><img src="images/gallery/20.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/21.jpg" class="img-wrap"><img src="images/gallery/21.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/22.jpg" class="img-wrap"><img src="images/gallery/22.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/23.jpg" class="img-wrap"><img src="images/gallery/23.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/24.jpg" class="img-wrap"><img src="images/gallery/24.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/25.jpg" class="img-wrap"><img src="images/gallery/25.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/26.jpg" class="img-wrap"><img src="images/gallery/26.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/27.jpg" class="img-wrap"><img src="images/gallery/27.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/28.jpg" class="img-wrap"><img src="images/gallery/28.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/29.jpg" class="img-wrap"><img src="images/gallery/29.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/30.jpg" class="img-wrap"><img src="images/gallery/30.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/31.jpg" class="img-wrap"><img src="images/gallery/31.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/32.jpg" class="img-wrap"><img src="images/gallery/32.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/33.jpg" class="img-wrap"><img src="images/gallery/33.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/34.jpg" class="img-wrap"><img src="images/gallery/34.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/35.jpg" class="img-wrap"><img src="images/gallery/35.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/36.jpg" class="img-wrap"><img src="images/gallery/36.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/37.jpg" class="img-wrap"><img src="images/gallery/37.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/38.jpg" class="img-wrap"><img src="images/gallery/38.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/39.jpg" class="img-wrap"><img src="images/gallery/39.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/40.jpg" class="img-wrap"><img src="images/gallery/40.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/41.jpg" class="img-wrap"><img src="images/gallery/41.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/42.jpg" class="img-wrap"><img src="images/gallery/42.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/43.jpg" class="img-wrap"><img src="images/gallery/43.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/44.jpg" class="img-wrap"><img src="images/gallery/44.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/45.jpg" class="img-wrap"><img src="images/gallery/45.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+                            <div class="grid__item" data-size="1280x961">
+                                <a href="images/gallery/46.jpg" class="img-wrap"><img src="images/gallery/46.jpg"/>
+                                    <div class="description description--grid"> . . . </div>
+                                </a>
+                            </div>
+    
+                            
+                        </div><!-- grid -->
+                        
+                        <div class="preview">
+				            <button class="action action--close">
+                                <i class="fa fa-close"></i><span class="text-hidden">Close</span>
+                            </button>
+				            <div class="description description--preview"></div>
+			            </div><!-- preview -->
+                    </div>
+                </div><!-- gallery -->
+            </div>
+        </section>
+        
+        <footer>
+            <div id="to-top" >
+                <div class="container">
+                    <ul id="up-btn" >
+                        <li><a href="#top-banner"><i class="fa fa-chevron-up fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- to top -->
+            <div id="footer-filter">
+                    <div id="bot-nav" class="">
+                        <div class="container">
+                            <div class="footer-content">
+                                <div class="divider"></div>
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#top-banner">Home</a></li>
+                                    <li><a href="#about">About Us</a></li>
+                                    <li><a href="#featured">Featured</a></li>
+                                    <li><a href="#gallery">Gallery</a></li>
+                                </ul><!-- nav -->
+                                <div class="end-note">
+                                    <span class="copyright">Copyright © 2016 
+                                        <a href="">Kato Photography</a>
+                                    </span>
+                                    <br>
+                                    <span class="license">
+                                        <a href="">License</a> | 
+                                    </span>
+                                    <span class="developer">Crafted with 
+                                        <i class="fa fa-heart"></i> by
+                                        <a href="https://kukajikato.github.io" target="_blank"><i class="fa fa-github"></i> Kukajikato</a> .
+                                    </span> 
+                                </div><!-- end-note -->
+                            </div><!-- footer-content -->
+                        </div>
+                    </div><!-- bot-nav -->
+                
+            </div><!-- /footer-filer -->
+        </footer>
+        
+    </div><!-- wrapper -->
+    </body>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/unslider-min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script><!-- -->
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+    <!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
+    <script src="js/jquery.debouncedresize.js"></script>
+    <script src="js/cbpFixedScrollLayout.min.js"></script>
+    <script src="js/cbpScroller.js"></script>
+    <script>
+        new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+    </script>
+    <script>
+        $(function() {
+            cbpFixedScrollLayout.init();
+        });
+    </script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('.featured-slider').unslider({
+                autoplay: true,
+                infinite: true,
+                arrows: false,
+                nav: false
+            });
+            
+		});
+	</script>
+	<script>
+		(function() {
+			var support = { transitions: Modernizr.csstransitions },
+				// transition end event name
+				transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+				transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+				onEndTransition = function( el, callback ) {
+					var onEndCallbackFn = function( ev ) {
+						if( support.transitions ) {
+							if( ev.target != this ) return;
+							this.removeEventListener( transEndEventName, onEndCallbackFn );
+						}
+						if( callback && typeof callback === 'function' ) { callback.call(this); }
+					};
+					if( support.transitions ) {
+						el.addEventListener( transEndEventName, onEndCallbackFn );
+					}
+					else {
+						onEndCallbackFn();
+					}
+				};
 
-</head>
-<body>
+			new GridFx(document.querySelector('.grid'), {
+				imgPosition : {
+					x : 1,
+					y : -0.75
+				},
+				pagemargin : 50,
+				onOpenItem : function(instance, item) {
+					var win = {width: window.innerWidth, height: window.innerHeight};
+					instance.items.forEach(function(el) {
+						if(item != el) {
+							var delay = Math.floor(Math.random() * 150);
+								el.style.WebkitTransition = 'opacity .6s ' + delay + 'ms cubic-bezier(.5,1,.2,1), -webkit-transform .6s ' + delay + 'ms cubic-bezier(.5,1,.2,1)';
+								el.style.transition = 'opacity .6s ' + delay + 'ms cubic-bezier(.5,1,.2,1), transform .6s ' + delay + 'ms cubic-bezier(.5,1,.2,1)';
+							
+								el.style.WebkitTransform = 'translate3d(-' + win.width + 'px,0,0)';
+								el.style.transform = 'translate3d(-' + win.width + 'px,0,0)';
+								el.style.opacity = 0;
+						}
+					});
+				},
+				onCloseItem : function(instance, item) {
+					instance.items.forEach(function(el) {
+						if(item != el) {
+							var delay = Math.floor(Math.random() * 150);
+							el.style.WebkitTransition = 'opacity .3s ' + delay + 'ms cubic-bezier(.5,1,.2,1), -webkit-transform .3s ' + delay + 'ms cubic-bezier(.5,1,.2,1)';
+							el.style.transition = 'opacity .3s ' + delay + 'ms cubic-bezier(.5,1,.2,1), transform .3s ' + delay + 'ms cubic-bezier(.5,1,.2,1)';
 
-</body>
+
+							el.style.WebkitTransform = 'translate3d(0,0,0)';
+							el.style.transform = 'translate3d(0,0,0)';
+							el.style.opacity = 1;
+
+							onEndTransition(el, function() {
+								el.style.transition = 'none';
+								el.style.WebkitTransform = 'none';
+							});
+						}
+					});
+				}
+			});
+		})();
+	</script>
+	<script type="text/javascript">
+		//$("#brand-h1").fitText();
+        $("#brand-h1").fitText(0.6, { minFontSize: '80', maxFontSize: '200' });
+        $(".specialty-label").fitText(.6, { minFontSize: '80', maxFontSize: '120' });
+        $("#dishes span").fitText(0.6, { minFontSize: '80', maxFontSize: '120' });
+        $("#dishes span span").fitText(0.6, { minFontSize: '80', maxFontSize: '120' });
+	</script>
+    <script>
+        $(function() {
+            $( '#dl-menu' ).dlmenu({
+                animationClasses : { classin : 'dl-animate-in-2', classout : 'dl-animate-out-2' }
+            });
+        });
+    </script><!-- /menu -->
+    <script>
+        $(function() {
+            $('ul.dl-menu a').bind('click',function(event){
+                var $anchor = $(this);
+
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500,'easeInOutExpo');
+
+                event.preventDefault();
+            });
+        });
+        
+        $(function() {
+            $('ul.nav a').bind('click',function(event){
+                var $anchor = $(this);
+
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500,'easeInOutExpo');
+
+                event.preventDefault();
+            });
+        });
+        
+        $(function() {
+            $('div.arrow-down a').bind('click',function(event){
+                var $anchor = $(this);
+
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500,'easeInOutExpo');
+
+                event.preventDefault();
+            });
+        });
+        
+        $(function() {
+            $('ul#up-btn a').bind('click',function(event){
+                var $anchor = $(this);
+
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500,'easeInOutExpo');
+
+                event.preventDefault();
+            });
+        });
+    </script>
 </html>

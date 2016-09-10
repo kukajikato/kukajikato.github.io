@@ -1,0 +1,261 @@
+html,body{
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+.trace{
+    border: 1px solid black;
+}
+
+.color-it{
+    background-color: #1c1e24 !important;
+}
+
+.spacer{
+    height: 10%;
+    width: 100%;
+}
+
+header{
+    height: 100%;
+}
+
+#dl-menu{
+    position: fixed !important;
+    top: 2% !important;
+    left: 2% !important;
+    z-index: 10 !important;
+}
+
+.dl-trigger{
+    background-color: #e53369 !important;
+}
+
+.dl-menu{
+    background-color: #1c1e24 !important;
+}
+
+.dl-menu li a{
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 200 !important;
+    text-transform: uppercase;
+}
+
+.dl-menu li a:hover{
+    text-decoration: none;
+    background-color: #9098A3 !important;
+    color: #e1eeff !important;
+}
+
+#top-banner{
+    height: 100%;
+    background-image:url(../images/grill2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#banner-filter{
+    height: 100%;
+    width: 100%;
+    background-color: #1c1e24;
+    opacity: .9;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#brand-h1{
+    font-family: 'Ruthie', cursive;
+    font-size: 200;
+    color: #e1eeff;
+    text-align: center;
+    height: 80%;
+    padding-top: 10%;
+    width: 100%;
+}
+
+.arrow-down{
+    width: 100%;
+    font-size: 25;
+    color: #e1eeff;
+    height: 5%;
+    text-align: center;
+    opacity: .5;
+}
+
+.arrow-down a{
+    color: #e1eeff;
+}
+
+.arrow-down a:hover{
+    color: #9098a3;
+}
+
+#about-us{
+    --height: 700px;
+    width: 100%;
+}
+
+#about-owner{
+    height: 700px;
+    width: 100%;
+}
+
+#specialty{
+    height: 400px;
+    width: 100%;
+}
+
+#dishes{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 120;
+    height: 800px;
+    width: 100%;
+    text-align: center;
+    color: #1c1e24;
+}
+
+#dishes span span{
+    padding-top: 50%;
+}
+
+#contact{
+    width: 100%;
+}
+
+#message{
+    height: 400px;
+}
+
+#location{
+    height: 400px;
+}
+
+footer{
+    min-height: 65%;
+    width: 100%;
+    background-image: url(../images/grilled-steaks.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 200%;
+}
+
+#footer-filter{
+    width: 100%;
+    background-color: #1c1e24;
+    opacity: .9;
+}
+
+#to-top{
+    height: 8%;
+    background-color: #32373D;
+    z-index: 10;
+    width: 100%;
+}
+
+#up-btn{
+    background-color: #1c1e24;
+    height: 8% !important;
+    color: #e1eeff;
+    text-align: center;
+    opacity: .5 !important;
+    position: absolute;
+    right: 5%;
+    margin: 0;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#up-btn li{
+    list-style: none;
+}
+
+#up-btn li a{
+    height: 100% !important;
+    color: #e1eeff;
+}
+
+#up-btn li a:hover{
+    background-color: transparent;
+    color: #9098a3;
+}
+
+.footer-content{
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 65% !important;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.footer-content ul {
+    width: 100%;
+}
+
+.footer-content ul li a{
+    color: #e1eeff;
+    padding-top: 15px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    text-transform: uppercase;
+}
+
+.footer-content ul li a:hover{
+    color: #9098a3;
+    background-color: transparent;
+}
+
+.end-note{
+    padding-top: 20%;
+    color: #9098a3;
+    padding-left: 15px !important;
+    padding-bottom: 8%;
+}
+
+.end-note span a{
+    color: #e1eeff;
+    text-decoration: none;
+}
+
+.end-note span a:hover{
+    color: #e53369;
+    text-decoration: none;
+}
+
+.copyright{
+}
+
+.developer i.fa-heart{
+    color: #e53369;
+}
+
+.divider{
+    border-bottom: 1px solid #e53369;
+    width: 100%;
+    padding-top: 10%;
+}
+
+#bot-nav{
+    min-height: 65%;
+}
+
+.share{
+    background-color: #e53369;
+    width: 100% !important;
+    color: #e1eeff;
+    padding: 5%;
+}
+
+.share-links{
+    padding: 5%;
+}
+
+
+.content {
+	padding: 1em 0 3em;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+

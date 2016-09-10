@@ -1,0 +1,395 @@
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.js .grid::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	background: #1c1e24 url(../img/loading.svg) no-repeat 50% 75px;
+	background-size: 60px auto;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.js .grid--loaded::after {
+	opacity: 0;
+}
+
+.grid__item {
+	width: 370px;
+	margin: 2px;
+}
+
+.grid__item--current {
+	opacity: 0 !important;
+}
+
+.img-wrap {
+	display: block;
+    opacity: .9;
+}
+
+.img-wrap:focus,
+.img-wrap:hover {
+	outline: none;
+    opacity: 1;
+}
+
+.img-wrap img {
+	display: block;
+	max-width: 100%;
+}
+
+.preview {
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 200 !important;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-ms-flex-line-pack: center;
+	-webkit-align-content: center;
+	align-content: center;
+	-ms-flex-align: start;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	height: 75%;
+	pointer-events: none;
+    opacity: 1;
+}
+
+.preview::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0;
+	background: #1c1e24;
+	-webkit-transition: opacity 0.6s;
+	transition: opacity 0.6s;
+}
+
+.preview--open {
+	pointer-events: auto;
+}
+
+.preview--open::before {
+	opacity: 1;
+}
+
+.clone {
+	position: fixed;
+	z-index: 110;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-backface-visibility: hidden;
+}
+
+.original {
+	position: relative;
+	z-index: 120;
+	display: block;
+	margin: auto 0;
+	object-fit: contain;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+	-webkit-backface-visibility: hidden;
+}
+
+.preview--open .animate {
+	/* open */
+	-webkit-transition: -webkit-transform 0.6s, opacity 0.2s;
+	transition: transform 0.6s, opacity 0.2s;
+}
+
+.animate {
+	/* close */
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.description {
+	color: #e1eeff;
+}
+
+.js .description--grid {
+	display: none;
+}
+
+.description--preview {
+	font-size: 2em;
+	font-size: 1.5em;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 140;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	width: 100%;
+	height: 25vh;
+	text-align: center;
+	padding: 1em 3vw;
+	opacity: 0;
+	-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+	transition: opacity 0.8s, transform 0.8s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	-webkit-transform: translate3d(100px, 0, 0);
+	transform: translate3d(100px, 0, 0);
+}
+
+.preview--open .description--preview {
+	opacity: 1;
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+
+/* Close button */
+
+.action {
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	vertical-align: top;
+	color: #e1eeff;
+	border: none;
+	background: none;
+}
+
+.action:hover,
+.action:focus {
+	color: #9098a3;
+	outline: none;
+}
+
+.action--close {
+	position: fixed;
+	z-index: 150;
+	top: 0;
+	right: 0;
+	padding: 1em;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: scale3d(0.6, 0.6, 1);
+	transform: scale3d(0.6, 0.6, 1);
+}
+
+.preview--image-loaded .action--close {
+	opacity: 1;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+
+.text-hidden {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	color: transparent;
+}
+
+.button {
+	font-size: 0.5em;
+	font-weight: bold;
+	margin: 0;
+	padding: 1em 2em;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 2em;
+	background: none;
+}
+
+.button--view {
+	margin-top: 2em;
+}
+
+/*Specialty*/
+.gridd {
+	position: relative;
+	--clear: both;
+	--margin: 0 auto;
+    --padding: 1em 0 4em;
+	--max-width: 1000px;
+	--list-style: none;
+	--text-align: center;
+    
+    --height: 100% !important;
+    --width: 100% !important;
+}
+
+/* Common style */
+.gridd figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	--margin: 10px 1%;
+	--min-width: 320px;
+	--max-width: 480px;
+	--max-height: 360px;
+	--width: 48%;
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+    
+    width: 100% !important;
+}
+
+.gridd figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+    
+}
+
+.gridd figure figcaption {
+	padding: 2em;
+	color: #e1eeff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.gridd figure figcaption::before,
+.gridd figure figcaption::after {
+	pointer-events: none;
+}
+
+.gridd figure figcaption,
+.gridd figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.gridd figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.gridd figure h2 {
+    font-family: 'Raleway', sans-serif !important;
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.gridd figure h2 span {
+	font-weight: 800;
+}
+
+.gridd figure h2,
+.gridd figure p {
+	margin: 0;
+}
+
+.gridd figure p {
+    font-family: 'Raleway', sans-serif !important;
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+figure.effect-goliath {
+	background: #1c1e24;
+    color: #e1eeff;
+}
+
+figure.effect-goliath img,
+figure.effect-goliath h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-goliath img {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+    
+    height: 95% !important;
+    width: 100% !important;
+}
+
+figure.effect-goliath h2,
+figure.effect-goliath p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 30px;
+}
+
+figure.effect-goliath p {
+	text-transform: none;
+	font-size: 90%;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,50px,0);
+	transform: translate3d(0,50px,0);
+}
+
+figure.effect-goliath:hover img {
+	-webkit-transform: translate3d(0,-80px,0);
+	transform: translate3d(0,-80px,0);
+}
+
+figure.effect-goliath:hover h2 {
+	-webkit-transform: translate3d(0,-100px,0);
+	transform: translate3d(0,-100px,0);
+}
+
+figure.effect-goliath:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+@media screen and (max-width: 50em) {
+	.contentt {
+		padding: 0 10px;
+		text-align: center;
+	}
+	.gridd figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+}
+

@@ -1,0 +1,87 @@
+
+/* General link styles */
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 8em;
+	line-height: 1;
+	color: #9e9ba4;
+	display: inline-block;
+    
+}
+
+.link--takiri {
+	font-weight: 700;
+	font-size: 7em;
+	padding: 0 10px 20px;
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+.link--takiri:hover {
+	color: #1e1a1b;
+}
+
+.link--takiri::before {
+	content: '';
+	position: absolute;
+	--height: 2%;
+	width: 60%;
+	top: 50%;
+	margin-top: -18px;
+	left: 20%;
+	z-index: -1;
+	background: #9e9ba4;
+	-webkit-transform: rotate3d(0,0,1,45deg) scale3d(0,1,1);
+	transform: rotate3d(0,0,1,45deg) scale3d(0,1,1);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.link--takiri:hover::before {
+	-webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+	transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+}
+
+.link--takiri span {
+    font-style: italic;
+    font-family: 'Permanent Marker', cursive;
+	font-size: 50%;
+	font-weight: 400;
+	position: absolute;
+	right: 5%;
+	color: #9e9ba4;
+	bottom: 20%;
+	opacity: 0;
+	-webkit-transform: translate3d(-10px,-10px,0);
+	transform: translate3d(-10px,-10px,0);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.link--takiri:hover span {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 50em) {
+	.link--surinami { font-size: 3em; }
+}
+
+@media screen and (max-width: 42em) {
+	.link--takiri { font-size: 3.5em; }
+	.link--kukuri { font-size: 3.5em; }
+	.link--nukun { font-size: 3.5em; }
+	.link--kumya { font-size: 3em; }
+	.link--manko { font-size: 3.5em; }
+	.link--urpi { font-size: 5em; }
+	.link--mallki { font-size: 3.5em; }
+	.link--ilin { font-size: 5em; }
+	.link--asiri { -webkit-transform: scale3d(0.65,0.65,1); transform: scale3d(0.65,0.65,1); }
+	.link--yaku { font-size: 4em; }
+}
+
